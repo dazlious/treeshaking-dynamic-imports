@@ -1,6 +1,6 @@
-# Treeshaking With Loadable Components
+# Try to understand Treeshaking with Dynamic Imports
 
-Webpack's tree shaking does not seem to work properly with loadable components enabled.
+Webpack's tree shaking does not seem to work properly.
 
 ## Try Out
 

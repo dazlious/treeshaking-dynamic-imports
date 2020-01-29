@@ -1,7 +1,6 @@
 const path = require('path');
 const TerserPlugin = require('terser-webpack-plugin');
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
-const LoadablePlugin = require('@loadable/webpack-plugin');
 
 const baseDir = path.resolve(__dirname);
 
@@ -13,7 +12,6 @@ const config = {
     symlinks: false,
   },
   plugins: [
-    new LoadablePlugin(),
     new BundleAnalyzerPlugin({
       analyzerMode: 'static',
       openAnalyzer: false,

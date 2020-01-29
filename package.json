@@ -1,5 +1,5 @@
 {
-  "name": "treeshaking-loadable-components",
+  "name": "treeshaking-dynamic-imports",
   "version": "0.0.0",
   "description": "Try to treeshake",
   "main": "index.jsx",
@@ -12,15 +12,12 @@
     "build": "NODE_ENV=production webpack --config webpack.config.js"
   },
   "dependencies": {
-    "@loadable/component": "^5.12.0",
     "react": "^16.12.0"
   },
   "devDependencies": {
     "@babel/core": "^7.5.4",
     "@babel/preset-env": "^7.5.4",
     "@babel/preset-react": "^7.0.0",
-    "@loadable/babel-plugin": "^5.12.0",
-    "@loadable/webpack-plugin": "^5.12.0",
     "babel-loader": "^8.0.6",
     "terser-webpack-plugin": "^2.3.2",
     "webpack": "^4.35.3",

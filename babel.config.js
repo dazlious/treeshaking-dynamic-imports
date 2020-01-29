@@ -1,17 +1,12 @@
 module.exports = (api) => {
   api.cache(false);
-
-  const presets = ['@babel/preset-react'];
-  const plugins = ['@loadable/babel-plugin'];
-
-  const envOptions = {
-    modules: false,
-  };
-
-  presets.push(['@babel/preset-env', envOptions]);
-
   return {
-    presets,
-    plugins,
+    presets: [
+      ['@babel/preset-env', {
+        modules: false,
+      }],
+      '@babel/preset-react'
+    ],
+    plugins: [],
   };
 };
